@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Outlet, Link } from "react-router-dom";
 // import '';
 
 function NavBar() {
@@ -8,6 +9,10 @@ function NavBar() {
         <div className='right-btn-div'>
         <button><a href='/login'>LogIn</a></button>
         <button><a href='/signin'>SignIn</a></button>
+
+        {/* <Link to={'/login'}>
+          <button type='submit'>Login</button>
+          </Link> */}
         </div>
     </nav>
   )

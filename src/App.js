@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./Component/NavBar.js";
+import { Outlet } from "react-router-dom";
 import { CometChat } from "@cometchat-pro/chat";
 
 const appId = process.env.REACT_APP_CHAT_APP_ID;
@@ -50,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <Outlet />
     </div>
   );
 }
