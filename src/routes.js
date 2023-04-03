@@ -3,7 +3,7 @@ import App from './App';
 import CheckAuth from './Utils/CheckAuth.js';
 import Guest from './Utils/Guest.js';
 import Home from './Pages/Home.js';
-import Login from './Pages/Login';
+import Login from './Pages/Login.js';
 import Signin from './Pages/Signin.js';
 
 
