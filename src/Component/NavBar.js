@@ -4,10 +4,10 @@ import React from 'react';
 function NavBar() {
   return (
     <nav>
-        <button className='home-btn'>Home</button>
+        <button className='home-btn'><a href='/'>Home</a></button>
         <div className='right-btn-div'>
-        <button>LogIn</button>
-        <button>SignIn</button>
+        <button><a href='/login'>LogIn</a></button>
+        <button><a href='/signin'>SignIn</a></button>
         </div>
     </nav>
   )
