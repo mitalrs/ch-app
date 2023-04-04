@@ -50,7 +50,8 @@ function Login() {
         }}
         placeholder="Email"
       ></input>
-      <button type="submit">Submit</button>
+      <br />
+      <button className="form-sm-btn" type="submit">Submit</button>
     </form>
   );
 }
