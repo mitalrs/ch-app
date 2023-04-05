@@ -27,6 +27,10 @@ function Login() {
 
   return (
     <form onSubmit={submitLogin}>
+      <div className="heading-div">
+      <h2>LogIn</h2>
+      <span>Please sigin in to continue</span>
+      </div>
       <label htmlFor="userName"></label>
       <input
         type="text"
