@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CometChat } from "@cometchat-pro/chat";
 
 
-function Signin() {
+function Signup() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -52,9 +52,11 @@ function Signin() {
         placeholder="email"
       ></input>
       
-      <button type="submit">Submit</button>
+      <button type="submit">SIGN UP</button>
+      <br />
+      <p>Already have a account? <a href="/login">Sign in</a></p>
     </form>
   );
 }
 
-export default Signin;
+export default Signup;

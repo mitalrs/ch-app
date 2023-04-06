@@ -55,7 +55,9 @@ function Login() {
         placeholder="Email"
       ></input>
       <br />
-      <button className="form-sm-btn" type="submit">Submit</button>
+      <button className="form-sm-btn" type="submit">LOGIN</button>
+      <br />
+      <p>Don't have an account? <a href="/signup">Sign up</a></p>
     </form>
   );
 }

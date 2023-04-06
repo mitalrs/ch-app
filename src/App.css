@@ -69,3 +69,6 @@ button{
 a{
   text-decoration: none;
 }
+p a{
+  color: aqua;
+}

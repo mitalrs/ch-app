@@ -4,7 +4,7 @@ import CheckAuth from './Utils/CheckAuth.js';
 import Guest from './Utils/Guest.js';
 import Home from './Pages/Home.js';
 import Login from './Pages/Login.js';
-import Signin from './Pages/Signin.js';
+import Signin from './Pages/Signup.js';
 
 
 
@@ -29,7 +29,7 @@ export default createBrowserRouter([
                 ),
             },
             {
-                path: "/signin",
+                path: "/signup",
                 element: (
                     <Guest>
                         <Signin />
