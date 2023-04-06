@@ -7,12 +7,9 @@ function NavBar() {
     <nav>
         <button className='home-btn'><a href='/'>Home</a></button>
         <div className='right-btn-div'>
-        <button><a href='/login'>LogIn</a></button>
-        <button><a href='/signup'>SignUp</a></button>
-
-        {/* <Link to={'/login'}>
-          <button type='submit'>Login</button>
-          </Link> */}
+        <a href='/login'><button>LogIn</button></a>
+        <a href='/signup'><button>SignUp</button></a>
+        
         </div>
     </nav>
   )

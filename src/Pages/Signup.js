@@ -27,8 +27,11 @@ function Signup() {
 
   return (
     <form onSubmit={submitsigin}>
-      <label htmlFor="userName"></label>
-      
+      <div className="heading-div">
+      <h2>Create Account</h2>
+      <span>Please fill the input blow here</span>
+      </div>
+      <label htmlFor="userName">USERNAME</label>
       <input
         type="text"
         id="userName"
@@ -40,7 +43,7 @@ function Signup() {
         placeholder="username"
       ></input>
       <br />
-      <label htmlFor="userMail"></label>
+      <label htmlFor="userMail">EMAIL</label>
       <input
         type="text"
         id="userMail"
@@ -51,6 +54,15 @@ function Signup() {
         }}
         placeholder="email"
       ></input>
+      <br />
+      <label htmlFor="phone">PHONE</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+91"
+      ></input>
+      <br />
       
       <button type="submit">SIGN UP</button>
       <br />
