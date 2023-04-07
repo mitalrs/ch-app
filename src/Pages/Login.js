@@ -31,7 +31,7 @@ function Login() {
       <h2>LogIn</h2>
       <span>Please sigin in to continue</span>
       </div>
-      <label htmlFor="userName">USERNAME</label>
+     
       <input
         type="text"
         id="userName"
@@ -42,6 +42,7 @@ function Login() {
         }}
         placeholder="UserName"
       ></input>
+       <label htmlFor="userName">USERNAME</label>
       <br />
       <label htmlFor="userMail">EMAIL</label>
       <input
