@@ -44,17 +44,31 @@ form {
 .heading-div span{
   color: #a0a0a0;
 }
+.input-pdiv{
+  position: relative;
+  width: 300px;
+  height: 60px;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
 input{
   background-color: #232931;
   color: #a0a0a0;
   border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 label{
   visibility: hidden;
   color: #a0a0a0;
+  transition: position 2s ease 1s;
 }
 input:focus + label{
   visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 input:focus{ 
   outline: none;

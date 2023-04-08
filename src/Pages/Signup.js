@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { CometChat } from "@cometchat-pro/chat";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+
 
 function Signup() {
   const [userName, setUserName] = useState("");
@@ -34,6 +37,7 @@ function Signup() {
 
       
       <div className="input-pdiv">
+      <FontAwesomeIcon icon={faUser} />
         <input
           type="text"
           id="userName"
@@ -52,6 +56,7 @@ function Signup() {
 
 
       <div className="input-pdiv">
+      <FontAwesomeIcon icon={faEnvelope} />
         <input
           type="text"
           id="userMail"
@@ -70,6 +75,7 @@ function Signup() {
 
 
       <div className="input-pdiv">
+      <FontAwesomeIcon icon={faMobile} />
         <input type="tel" id="phone" name="phone" placeholder="+91"></input>
         <label htmlFor="phone">PHONE</label>
       </div>

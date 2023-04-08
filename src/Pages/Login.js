@@ -1,65 +1,74 @@
 import React, { useState } from "react";
 import { CometChat } from "@cometchat-pro/chat";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Login() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
 
-  
-
   function submitLogin(e) {
     e.preventDefault();
-    console.log(userName,email);
+    console.log(userName, email);
     const authKey = process.env.REACT_APP_CHAT_AUTH_KEY;
-  const uid = userName;
-  
-  //login
-  CometChat.login(uid, authKey).then(
-    user => {
-      console.log("Login Successful:", { user });
-    },
-    error => {
-      console.log("Login failed with exception:", { error });
-    }
-  );
+    const uid = userName;
+
+    //login
+    CometChat.login(uid, authKey).then(
+      (user) => {
+        console.log("Login Successful:", { user });
+      },
+      (error) => {
+        console.log("Login failed with exception:", { error });
+      }
+    );
   }
 
   return (
     <form onSubmit={submitLogin}>
       <div className="heading-div">
-      <h2>LogIn</h2>
-      <span>Please sigin in to continue</span>
+        <h2>LogIn</h2>
+        <span>Please sigin in to continue</span>
       </div>
-     
-      <input
-        type="text"
-        id="userName"
-        name="username"
-        value={userName}
-        onChange={(e)=>{
-          setUserName(e.target.value)
-        }}
-        placeholder="UserName"
-      ></input>
-       <label htmlFor="userName">USERNAME</label>
+
+      <div className="input-pdiv">
+      <FontAwesomeIcon icon={faUser} />
+        <input
+          type="text"
+          id="userName"
+          name="username"
+          value={userName}
+          onChange={(e) => {
+            setUserName(e.target.value);
+          }}
+          placeholder="UserName"
+        ></input>
+        <label htmlFor="userName">USERNAME</label>
+      </div>
       <br />
-     
-      <input
-        type="text"
-        id="userMail"
-        name="email"
-        value={email}
-        onChange={(e)=>{
-          setEmail(e.target.value)
-        }}
-        placeholder="Email"
-      ></input>
-       <label htmlFor="userMail">EMAIL</label>
+
+      <div className="input-pdiv">
+      <FontAwesomeIcon icon={faEnvelope} />
+        <input
+          type="text"
+          id="userMail"
+          name="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          placeholder="Email"
+        ></input>
+        <label htmlFor="userMail">EMAIL</label>
+      </div>
       <br />
-      <button className="form-sm-btn" type="submit">LOGIN</button>
+      <button className="form-sm-btn" type="submit">
+        LOGIN
+      </button>
       <br />
-      <p>Don't have an account? <a href="/signup">Sign up</a></p>
+      <p>
+        Don't have an account? <a href="/signup">Sign up</a>
+      </p>
     </form>
   );
 }
