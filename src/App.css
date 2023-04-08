@@ -23,7 +23,7 @@ nav {
 }
 
 form {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,7 @@ form {
   top: 0;
   width: 93%;
   color: #ffffff;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding-left: 7%;
 }
 .heading-div span{
@@ -48,7 +48,7 @@ form {
   position: relative;
   width: 300px;
   height: 80px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 15px;
   margin: 6px;
 }
@@ -56,7 +56,7 @@ form {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 9%;
   color: #706f6f;
 }

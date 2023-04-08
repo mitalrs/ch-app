@@ -58,7 +58,7 @@ function Login() {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          placeholder="Email"
+          placeholder="EMAIL"
         ></input>
         <label htmlFor="userMail">EMAIL</label>
       </div>
@@ -70,7 +70,7 @@ function Login() {
       </button>
 
       <br />
-      
+
       <p>
         Don't have an account? <a href="/signup">Sign up</a>
       </p>

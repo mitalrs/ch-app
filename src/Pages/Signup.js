@@ -46,7 +46,7 @@ function Signup() {
           onChange={(e) => {
             setUserName(e.target.value);
           }}
-          placeholder="username"
+          placeholder="USERNAME"
         ></input>
         <label htmlFor="userName">USERNAME</label>
       </div>
@@ -65,7 +65,7 @@ function Signup() {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
-          placeholder="email"
+          placeholder="EMAIL"
         ></input>
         <label htmlFor="userMail">EMAIL</label>
       </div>
@@ -83,7 +83,7 @@ function Signup() {
 
       <br />
 
-      <button type="submit">SIGN UP</button>
+      <button type="submit" className="form-sm-btn">SIGN UP</button>
       
       <br />
       <p>
