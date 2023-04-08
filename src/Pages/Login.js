@@ -32,7 +32,7 @@ function Login() {
       </div>
 
       <div className="input-pdiv">
-      <FontAwesomeIcon icon={faUser} />
+      <FontAwesomeIcon icon={faUser} className="icon"/>
         <input
           type="text"
           id="userName"
@@ -41,14 +41,15 @@ function Login() {
           onChange={(e) => {
             setUserName(e.target.value);
           }}
-          placeholder="UserName"
+          placeholder="USERNAME"
         ></input>
         <label htmlFor="userName">USERNAME</label>
       </div>
+
       <br />
 
       <div className="input-pdiv">
-      <FontAwesomeIcon icon={faEnvelope} />
+      <FontAwesomeIcon icon={faEnvelope} className="icon"/>
         <input
           type="text"
           id="userMail"
@@ -61,11 +62,15 @@ function Login() {
         ></input>
         <label htmlFor="userMail">EMAIL</label>
       </div>
+
       <br />
+
       <button className="form-sm-btn" type="submit">
         LOGIN
       </button>
+
       <br />
+      
       <p>
         Don't have an account? <a href="/signup">Sign up</a>
       </p>

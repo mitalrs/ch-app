@@ -47,28 +47,49 @@ form {
 .input-pdiv{
   position: relative;
   width: 300px;
-  height: 60px;
+  height: 80px;
   border: 1px solid blue;
   border-radius: 15px;
+  margin: 6px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 9%;
+  color: #706f6f;
 }
 input{
   background-color: #232931;
-  color: #a0a0a0;
+  color: white;
   border: none;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 15%;
+  right: 5%;
+  font-weight: 600;
+  /* border: 1px solid yellow; */
+  font-size: 19px;
+  height: 40%;
+  width: 70%;
+}
+input::placeholder{
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 14px;
 }
 label{
   visibility: hidden;
-  color: #a0a0a0;
+  color: #706f6f;
+  font-size: 14px;
+  /* border: 1px solid yellow; */
   transition: position 2s ease 1s;
 }
 input:focus + label{
   visibility: visible;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15%;
+  left: 24%;
 }
 input:focus{ 
   outline: none;
@@ -108,4 +129,7 @@ a{
 p a{
   color: aqua;
   font-weight: bold;
+}
+p{
+  color: #a0a0a0;
 }

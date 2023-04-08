@@ -37,7 +37,7 @@ function Signup() {
 
       
       <div className="input-pdiv">
-      <FontAwesomeIcon icon={faUser} />
+      <FontAwesomeIcon icon={faUser} className="icon"/>
         <input
           type="text"
           id="userName"
@@ -56,7 +56,7 @@ function Signup() {
 
 
       <div className="input-pdiv">
-      <FontAwesomeIcon icon={faEnvelope} />
+      <FontAwesomeIcon icon={faEnvelope} className="icon"/>
         <input
           type="text"
           id="userMail"
@@ -75,7 +75,7 @@ function Signup() {
 
 
       <div className="input-pdiv">
-      <FontAwesomeIcon icon={faMobile} />
+      <FontAwesomeIcon icon={faMobile} className="icon"/>
         <input type="tel" id="phone" name="phone" placeholder="+91"></input>
         <label htmlFor="phone">PHONE</label>
       </div>
