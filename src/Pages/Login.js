@@ -44,7 +44,7 @@ function Login() {
       ></input>
        <label htmlFor="userName">USERNAME</label>
       <br />
-      <label htmlFor="userMail">EMAIL</label>
+     
       <input
         type="text"
         id="userMail"
@@ -55,6 +55,7 @@ function Login() {
         }}
         placeholder="Email"
       ></input>
+       <label htmlFor="userMail">EMAIL</label>
       <br />
       <button className="form-sm-btn" type="submit">LOGIN</button>
       <br />

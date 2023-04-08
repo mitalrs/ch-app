@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CometChat } from "@cometchat-pro/chat";
 
-
 function Signup() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,46 +26,63 @@ function Signup() {
 
   return (
     <form onSubmit={submitsigin}>
+
       <div className="heading-div">
-      <h2>Create Account</h2>
-      <span>Please fill the input blow here</span>
+        <h2>Create Account</h2>
+        <span>Please fill the input blow here</span>
       </div>
-      <label htmlFor="userName">USERNAME</label>
-      <input
-        type="text"
-        id="userName"
-        name="username"
-        value={userName}
-        onChange={(e) => {
-          setUserName(e.target.value);
-        }}
-        placeholder="username"
-      ></input>
-      <br />
-      <label htmlFor="userMail">EMAIL</label>
-      <input
-        type="text"
-        id="userMail"
-        name="email"
-        value={email}
-        onChange={(e) => {
-          setEmail(e.target.value);
-        }}
-        placeholder="email"
-      ></input>
-      <br />
-      <label htmlFor="phone">PHONE</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="+91"
-      ></input>
-      <br />
+
       
-      <button type="submit">SIGN UP</button>
+      <div className="input-pdiv">
+        <input
+          type="text"
+          id="userName"
+          name="username"
+          value={userName}
+          onChange={(e) => {
+            setUserName(e.target.value);
+          }}
+          placeholder="username"
+        ></input>
+        <label htmlFor="userName">USERNAME</label>
+      </div>
+
+
       <br />
-      <p>Already have a account? <a href="/login">Sign in</a></p>
+
+
+      <div className="input-pdiv">
+        <input
+          type="text"
+          id="userMail"
+          name="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          placeholder="email"
+        ></input>
+        <label htmlFor="userMail">EMAIL</label>
+      </div>
+
+
+      <br />
+
+
+      <div className="input-pdiv">
+        <input type="tel" id="phone" name="phone" placeholder="+91"></input>
+        <label htmlFor="phone">PHONE</label>
+      </div>
+
+
+      <br />
+
+      <button type="submit">SIGN UP</button>
+      
+      <br />
+      <p>
+        Already have a account? <a href="/login">Sign in</a>
+      </p>
     </form>
   );
 }
