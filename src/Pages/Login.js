@@ -31,7 +31,9 @@ function Login() {
         <span>Please sigin in to continue</span>
       </div>
 
-      <div className="input-pdiv">
+      <div className="input-pdiv" style={{
+        background: userName !== '' ? '#393E46' : ' #232931'
+      }}>
       <FontAwesomeIcon icon={faUser} className="icon"/>
         <input
           type="text"
@@ -42,13 +44,18 @@ function Login() {
             setUserName(e.target.value);
           }}
           placeholder="USERNAME"
+          style={{
+            background: userName !== '' ? '#393E46' : ' #232931'
+          }}
         ></input>
         <label htmlFor="userName">USERNAME</label>
       </div>
 
       <br />
 
-      <div className="input-pdiv">
+      <div className="input-pdiv" style={{
+        background: email !== '' ? '#393E46' : ' #232931'
+      }}>
       <FontAwesomeIcon icon={faEnvelope} className="icon"/>
         <input
           type="text"
@@ -59,6 +66,9 @@ function Login() {
             setEmail(e.target.value);
           }}
           placeholder="EMAIL"
+          style={{
+            background: email !== '' ? '#393E46' : ' #232931'
+          }}
         ></input>
         <label htmlFor="userMail">EMAIL</label>
       </div>
