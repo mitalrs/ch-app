@@ -5,7 +5,7 @@ import React from 'react';
 function NavBar() {
   return (
     <nav>
-        <button className='home-btn'><a href='/'>Home</a></button>
+        <button className='home-btn'><a href='/'>TalkZone</a></button>
         <div className='right-btn-div'>
         <a href='/login'><button>LogIn</button></a>
         <a href='/signup'><button>SignUp</button></a>
