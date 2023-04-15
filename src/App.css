@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Varela+Round&display=swap');
+
 .App {
   /* text-align: center; */
   height: 100vh;
@@ -9,6 +11,9 @@
   justify-content: center;
   position: relative;
   background-color: #232931;
+
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 nav {
