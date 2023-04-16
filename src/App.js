@@ -3,6 +3,7 @@ import NavBar from "./Component/NavBar.js";
 import { Outlet } from "react-router-dom";
 import { CometChat } from "@cometchat-pro/chat";
 
+
 const appId = process.env.REACT_APP_CHAT_APP_ID;
 const region = process.env.REACT_APP_CHAT_REGION;
 const appSetting = new CometChat.AppSettingsBuilder()
